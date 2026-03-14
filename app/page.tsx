@@ -269,8 +269,9 @@ function SubmitView({ onBack, onOptimisticAdd }) {
       setStory("");
       setFile(null);
       setPreviewUrl("");
-    } catch (error) {
-      setStatus(error.message || "Upload failed.");
+      } catch (error: any) {
+  setStatus(error?.message || "Upload failed.");
+    }
     } finally {
       setIsSubmitting(false);
     }
