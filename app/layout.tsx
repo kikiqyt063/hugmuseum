@@ -32,3 +32,30 @@ export default function RootLayout({
     </html>
   );
 }
+
+export const metadata = {
+  title: "Hug Museum",
+  description: "A live digital hug wall for sharing photos, videos, and stories of hugs.",
+  openGraph: {
+    title: "Hug Museum",
+    description: "A live digital hug wall for sharing photos, videos, and stories of hugs.",
+    url: "https://hugmuseum.vercel.app/",
+    siteName: "Hug Museum",
+    images: [
+      {
+        url: "https://hugmuseum.vercel.app/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Hug Museum preview image",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hug Museum",
+    description: "A live digital hug wall for sharing photos, videos, and stories of hugs.",
+    images: ["https://hugmuseum.vercel.app/og-image.jpg"],
+  },
+};
